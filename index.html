@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LIFF テスト</title>
+</head>
+<body>
+  <script src="https://static.line-scdn.net/liff/edge/2.0/sdk.js"></script>
+  <script>
+    async function main() {
+      try {
+        await liff.init({ liffId: '2007458621-pYMlJB1W' });
+        alert('LIFF 初期化成功！');
+      } catch (err) {
+        alert('LIFF 初期化に失敗しました: ' + err);
+      }
+    }
+    main();
+  </script>
+</body>
+</html>
